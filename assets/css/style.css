@@ -1,0 +1,44 @@
+
+:root{
+  --bg:#0b0613;
+  --fg:#eae6f5;
+  --muted:#b9b0cf;
+  --brand:#7c3aed; --brand-2:#a78bfa;
+  --gold:#e9c46a; --gold-2:#f4a261;
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:radial-gradient(1200px 800px at 70% -20%, rgba(124,58,237,.25), transparent), var(--bg);color:var(--fg);font:16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto}
+a{color:var(--gold);text-decoration:none}
+a:hover{opacity:.9}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#2b1d0a;border:none;padding:.85rem 1.2rem;border-radius:999px;font-weight:800;letter-spacing:.2px;box-shadow:0 8px 24px rgba(233,196,106,.25);cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(233,196,106,.3)}
+.btn.secondary{background:rgba(124,58,237,.15);color:#fff;border:1px solid rgba(167,139,250,.3);box-shadow:none}
+.badge{display:inline-block;padding:.35rem .7rem;border-radius:999px;background:rgba(124,58,237,.20);border:1px solid rgba(167,139,250,.35);color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.3px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(11,6,19,.7);backdrop-filter: blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .bar{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+.nav .menu{display:flex;gap:1rem;flex-wrap:wrap}
+.nav .menu a{padding:.5rem .8rem;border-radius:10px;color:#eae6f5}
+.nav .menu a:hover{background:rgba(255,255,255,.05)}
+.hero{padding:96px 0;background:radial-gradient(1200px 600px at -10% -10%, rgba(233,196,106,.10), transparent)}
+.hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.h1{font-size:56px;line-height:1.05;margin:0 0 14px;font-weight:900;letter-spacing:-.5px;text-shadow:0 0 30px rgba(124,58,237,.45), 0 0 6px rgba(233,196,106,.45)}
+.lead{font-size:1.15rem;color:var(--muted);margin-bottom:22px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00));border:1px solid rgba(255,255,255,.06);border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.04);padding:18px;transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 24px 60px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.06)}
+.section{padding:80px 0}
+.section h2{font-size:34px;margin:0 0 14px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.table thead th{background:rgba(124,58,237,.2);text-align:left;padding:12px;font-weight:800}
+.table tbody td{padding:12px;border-top:1px solid rgba(255,255,255,.06)}
+.footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.06);color:#c8bfdf}
+.notice{font-size:.9rem;color:#c8bfdf;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.12);padding:12px;border-radius:14px}
+@media (max-width:960px){
+  .hero .grid, .grid-2{grid-template-columns:1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .h1{font-size:42px}
+}

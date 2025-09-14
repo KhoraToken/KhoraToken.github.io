@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>KHORA — The Digital Agora</title>
+  <meta name="description" content="KHORA — community-driven memecoin on Solana with 20-round presale, locked liquidity, and transparent vesting."/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <meta property="og:title" content="KHORA — The Digital Agora">
+  <meta property="og:description" content="Twenty-round presale on Solana. Locked liquidity, transparent vesting. Join the CHADs.">
+  <meta property="og:image" content="assets/img/logo.svg">
+  <meta name="theme-color" content="#7c3aed">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container bar">
+      <div style="display:flex;align-items:center;gap:.8rem;">
+        <img src="assets/img/logo.svg" alt="$KHORA logo" width="34" height="34" style="border-radius:10px"/>
+        <strong style="font-size:1.05rem;letter-spacing:.5px;">$KHORA</strong>
+      </div>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#presale">Presale</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://x.com/Khoratoken" target="_blank" rel="noopener">X</a>
+        <a href="https://t.me/+AYWRXtByxUdlZWRk" target="_blank" rel="noopener">Telegram</a>
+        <a href="whitepaper.pdf" target="_blank" rel="noopener">Whitepaper</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <span class="badge">SOLANA • COMMUNITY • CULTURE</span>
+          <h1 class="h1">KHORA — The Digital Agora</h1>
+          <p class="lead">A CULT. A MOVEMENT. A COMMUNITY. KHORA is a community-driven memecoin on <strong>Solana</strong> with a <strong>20-round presale</strong>, <strong>locked liquidity</strong>, and <strong>transparent vesting</strong>.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn" href="whitepaper.pdf" target="_blank" rel="noopener">Read Whitepaper</a>
+            <a class="btn secondary" href="#presale">View Presale Rounds</a>
+            <a class="btn" href="https://x.com/Khoratoken" target="_blank" rel="noopener" aria-label="Follow on X">Follow on X</a>
+            <a class="btn secondary" href="https://t.me/+AYWRXtByxUdlZWRk" target="_blank" rel="noopener" aria-label="Join Telegram">Join Telegram</a>
+          </div>
+          <div class="kpis">
+            <div class="card"><h4>Total Supply</h4><p><strong>100,000,000,000</strong> $KHORA</p></div>
+            <div class="card"><h4>Presale</h4><p><strong>20 Rounds</strong> (1B / round)</p></div>
+            <div class="card"><h4>Liquidity Lock</h4><p><strong>12 months</strong> public LP lock</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <canvas id="tokenChart" aria-label="Tokenomics pie chart"></canvas>
+          <p class="notice" style="margin-top:12px">Distribution per whitepaper. Vesting & lock details below.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2>Why KHORA? Why Now?</h2>
+      <p class="sub">Not just another memecoin — a cultural revolution where <em>culture meets finance</em>. Transparent tokenomics, progressive price discovery, and community-first growth.</p>
+      <div class="grid-2">
+        <div class="card"><h4>Progressive Price Discovery</h4><p>20 presale rounds create continuous momentum and clear milestones.</p></div>
+        <div class="card"><h4>Trust by Design</h4><p>50% liquidity locked for 12 months. Team vests after a 12-month lock.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tokenomics">
+    <div class="container">
+      <h2>Tokenomics</h2>
+      <p class="sub">Designed for trust & growth.</p>
+      <div class="grid-2">
+        <div class="card">
+          <ul>
+            <li><strong>Liquidity:</strong> 50% / 50B — 12-month lock; public proofs.</li>
+            <li><strong>Presale:</strong> 20% / 20B — 20 rounds; 1B tokens per round.</li>
+            <li><strong>Community:</strong> 10% / 10B</li>
+            <li><strong>Team:</strong> 10% / 10B — 12m lock + 12m linear vesting</li>
+            <li><strong>Reserves:</strong> 5% / 5B</li>
+            <li><strong>Marketing:</strong> 5% / 5B</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Vesting</h3>
+          <ul>
+            <li><strong>Presale:</strong> 20% TGE + 8 months (10% monthly)</li>
+            <li><strong>Team:</strong> 12m lock + 12m linear vesting</li>
+            <li><strong>Liquidity:</strong> Locked 12 months</li>
+          </ul>
+          <p class="notice">All locks and audits will be publicly verifiable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="presale">
+    <div class="container">
+      <h2>Presale — 20 Rounds</h2>
+      <p class="sub">Price starts at <strong>$0.00010</strong> and increases by <strong>$0.00001</strong> per round.</p>
+      <div class="card" style="overflow:auto">
+        <table class="table" aria-label="Presale rounds">
+          <thead><tr><th>Round</th><th>Tokens</th><th>Price (USD)</th><th>Raise (USD)</th></tr></thead>
+          <tbody id="presale-body"></tbody>
+        </table>
+      </div>
+      <p class="notice" style="margin-top:12px">This website is informational. Sales occur only through the official presale interface when announced.</p>
+    </div>
+  </section>
+
+  <section class="section" id="roadmap">
+    <div class="container">
+      <h2>Roadmap</h2>
+      <div class="card"><p>Q4 2025 — Website, Presale, LP lock, DEX listing<br/>Q1 2026 — 25K holders, NFT collab, Dashboard Alpha, CEX apps<br/>Q2 2026 — Staking v1, DAO-lite, Tier-2 CEX<br/>Q3 2026 — Dashboard v1, 50M liquidity depth</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="grid-2">
+        <div class="card"><h4>What is KHORA?</h4><p>KHORA is a Solana-based memecoin evolving into a community-driven movement.</p></div>
+        <div class="card"><h4>How many tokens?</h4><p>Total supply is <strong>100,000,000,000</strong> $KHORA.</p></div>
+        <div class="card"><h4>How does the presale work?</h4><p>20 rounds, each with 1B tokens. Price starts at $0.00010 and increases by $0.00001 per round.</p></div>
+        <div class="card"><h4>Is liquidity locked?</h4><p>Yes, 50% of supply is reserved for liquidity and locked for 12 months with public proof.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>&copy; <span id="year"></span> KHORA. All rights reserved.</div>
+      <div>Follow us: <a href="https://x.com/Khoratoken" aria-label="X (Twitter)" target="_blank" rel="noopener">$X</a> • <a href="https://t.me/+AYWRXtByxUdlZWRk" aria-label="Telegram" target="_blank" rel="noopener">Telegram</a> • <a href="whitepaper.pdf" target="_blank" rel="noopener">Whitepaper</a></div>
+    </div>
+  </footer>
+</body>
+</html>
